@@ -45,8 +45,11 @@ const quoteData = [
   },
 ];
 
-// TODO: dynamic year in footer 
-
+// DONE: dynamic year in footer 
+function getFooterYear(){
+  let copyYear = new Date().getFullYear();
+  return document.getElementById('copyYear').innerHTML = `&copy; ${copyYear}`;
+}
 
 // Get a random quote from data
 function getQuote() {
@@ -83,8 +86,11 @@ function loadQuote() {
   return (document.getElementById("quoteOutput").innerHTML = quoteHTML);
 }
 
-// DONE: Make button work with event listeners
 
+// Set current copywrite year in footer 
+  getFooterYear();
+
+// DONE: Make button work with event listeners
 document
   .getElementById("loadQuoteBtn")
   .addEventListener("click", loadQuote, false);
