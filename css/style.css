@@ -1,1 +1,57 @@
 /* TODO Style page  */
+:root{
+  --titleColor: #feda4a;
+  --fontColor: #fff;
+  --drkBackground: #121212;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--drkBackground);
+  background-image: url('/images/space.png');
+  color: var(--fontColor);
+  font-family: 'Pathway Gothic One', sans-serif;
+  /* width: 90%;
+  margin: 0 auto; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+header{
+  width: 100%;
+  background-color: gray;
+}
+
+h1{
+  color: var(--titleColor);
+}
+
+main{
+  background-color: aqua;
+  display: block;
+
+  flex: 1;
+
+}
+
+
+
+
+footer{
+  background-color: aquamarine;
+}
+
+.container {
+
+}
