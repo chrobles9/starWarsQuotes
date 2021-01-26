@@ -1,57 +1,175 @@
 /* TODO Style page  */
-:root{
+:root {
   --titleColor: #feda4a;
   --fontColor: #fff;
   --drkBackground: #121212;
+  --btnColorDark: #6b0f15;
+  --btnColorLight: #f72331;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: var(--drkBackground);
-  background-image: url('/images/space.png');
+  background-image: url("/images/space.png");
   color: var(--fontColor);
-  font-family: 'Pathway Gothic One', sans-serif;
-  /* width: 90%;
-  margin: 0 auto; */
-
+  font-family: "Pathway Gothic One", sans-serif;
+  /* padding: 0 5%; */
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  margin: 0 auto;
 
   flex-wrap: wrap;
   flex-direction: column;
 
+  min-height: 100vh;
 }
 
-header{
+header {
   width: 100%;
-  background-color: gray;
+  /* background-color: gray; */
+
+
+
+  flex-shrink: 0;
+
 }
 
-h1{
+h1 {
   color: var(--titleColor);
+  text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
+  font-size: 2rem;
 }
 
-main{
-  background-color: aqua;
-  display: block;
+main {
+  /* background-color: aqua; */
+  /* display: block; */
+  width: 90%;
 
   flex: 1;
+}
 
+/* .container {
+  background: rgba(0, 0, 0, 0.719);
+  width: 90%;
+
+  margin: 3em auto;
+} */
+.quoteOutput {
+  background: rgba(0, 0, 0, 0.719);
+  width: 90%;
+
+  margin: 3em auto 0;
+}
+
+
+/* .container {
+
+} */
+
+
+
+
+footer {
+  /* background-color: aquamarine; */
+  color: var(--titleColor);
+
+
+
+
+  flex-shrink: 0;
+
+}
+
+/* BUTTON STYLES */
+#loadQuoteBtn {
+  /* cursor: pointer;
+
+  background-color: blue;
+  border: 2px solid blue;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px; */
+
+  /* GLOWING BUTTON STYLES */
+  /* -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  animation: glowing 2500ms infinite; */
+
+  cursor: pointer;
+  color: #fff;
+  margin: 2em auto;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  animation: glowing 2500ms infinite;
+}
+
+#loadQuoteBtn:focus {
+  outline: none;
+}
+
+#loadQuoteBtn:hover {
+  animation: none;
+  background-color: #f72331;
+  box-shadow: 0 0 10px #f72331;
+}
+
+/* RED GLOWING ANIMATION KEYFRAMES */
+
+@keyframes glowing {
+  0% {
+    background-color: #6b0f15;
+    box-shadow: 0 0 3px #6b0f15;
+  }
+  50% {
+    background-color: #f72331;
+    box-shadow: 0 0 10px #f72331;
+  }
+  100% {
+    background-color: #6b0f15;
+    box-shadow: 0 0 3px #6b0f15;
+  }
+}
+
+/* QUOTE TYPOGRAPHY STYLES */
+.quote {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.2;
+
+}
+.source {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.citation {
+  font-style: italic;
+}
+.year {
+  font-weight: lighter;
 }
 
 
 
 
-footer{
-  background-color: aquamarine;
-}
-
-.container {
-
-}
+/* TODO: STYLES FOR LARGER SCREENS */
