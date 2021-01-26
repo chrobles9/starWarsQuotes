@@ -62,13 +62,13 @@ function getQuote() {
 function loadQuote() {
   // gets random quote object data and store it in variable
   let randomQuote = getQuote();
-  let quoteHTML = `<p class="quote">${randomQuote.quote}</p>`;
+  let quoteHTML = `<p class="quote">"${randomQuote.quote}"</p>`;
 
   // Source check
   if ("source" in randomQuote) {
-    quoteHTML += `<p class= "source">-${randomQuote.source}, `;
+    quoteHTML += `<p class= "source">- ${randomQuote.source}, `;
   } else {
-    quoteHTML += `<p class= "source">-Unknown Source, `;
+    quoteHTML += `<p class= "source">- Unknown Source, `;
   }
   // Citation check
   if ("citation" in randomQuote) {
