@@ -13,9 +13,9 @@
 
 body {
   background-color: var(--drkBackground);
-  background-image: url("/images/space.png");
+  background-image: url("../images/space.png");
   color: var(--fontColor);
-  font-family: "Pathway Gothic One", sans-serif;
+  font-family: "Jura", sans-serif;
   /* padding: 0 5%; */
   width: 95%;
   margin: 0 auto;
@@ -34,16 +34,15 @@ header {
   width: 100%;
   /* background-color: gray; */
 
-
-
   flex-shrink: 0;
-
 }
 
 h1 {
   color: var(--titleColor);
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
-  font-size: 2rem;
+  /* font-size: 2rem; */
+
+  font-size: 10vw;
 }
 
 main {
@@ -61,29 +60,25 @@ main {
   margin: 3em auto;
 } */
 .quoteOutput {
-  background: rgba(0, 0, 0, 0.719);
+  background: rgba(0, 0, 0, 0.2);
   width: 90%;
 
   margin: 3em auto 0;
 }
 
-
 /* .container {
 
 } */
 
-
-
-
 footer {
   /* background-color: aquamarine; */
   color: var(--titleColor);
-
-
-
+  text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
+  font-size: 1.3rem;
+  margin: 0 auto;
+  line-height: 0.1em;
 
   flex-shrink: 0;
-
 }
 
 /* BUTTON STYLES */
@@ -118,10 +113,15 @@ footer {
   border-radius: 4px;
   border: none;
   display: inline-block;
-  font-size: 20px;
-  padding: 10px;
+  /* font-size: 20px; */
+
+  font-size: 3vw;
+
+  padding: 2%;
   text-decoration: none;
   animation: glowing 2500ms infinite;
+
+  font-family: "Days One", sans-serif;
 }
 
 #loadQuoteBtn:focus {
@@ -153,14 +153,21 @@ footer {
 
 /* QUOTE TYPOGRAPHY STYLES */
 .quote {
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
+
+  font-size: 8vw;
+
   text-align: center;
   line-height: 1.2;
-
 }
 .source {
   font-weight: bold;
-  font-size: 1.3rem;
+  /* font-size: 1.5rem; */
+
+  font-size: 6vw;
+}
+.sourcePerson {
+  color: var(--titleColor);
 }
 .citation {
   font-style: italic;
@@ -169,7 +176,24 @@ footer {
   font-weight: lighter;
 }
 
-
-
-
 /* TODO: STYLES FOR LARGER SCREENS */
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4vw;
+  }
+  #loadQuoteBtn {
+    font-size: 1.8vw;
+    padding: 1.5%;
+    margin: 1rem auto;
+  }
+  .quote{
+    font-size: 3vw;
+    margin: 1rem auto;
+
+  }
+  .source{
+    font-size: 2vw;
+  }
+
+}

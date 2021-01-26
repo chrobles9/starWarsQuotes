@@ -66,7 +66,7 @@ function loadQuote() {
 
   // Source check
   if ("source" in randomQuote) {
-    quoteHTML += `<p class= "source">- ${randomQuote.source}, `;
+    quoteHTML += `<p class= "source">-<span class = "sourcePerson">${randomQuote.source}</span>, `;
   } else {
     quoteHTML += `<p class= "source">- Unknown Source, `;
   }
