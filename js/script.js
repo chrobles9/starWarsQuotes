@@ -71,7 +71,7 @@ const quoteData = [
   },
   {
     quote:
-      "Never get between a Mandalorian and a weapons package",
+      "Never get between a Mandalorian and a weapons package.",
     source: "Sabine Wren",
     citation: "Star Wars Rebels"
   },
@@ -107,19 +107,19 @@ function loadQuote() {
   if ("source" in randomQuote) {
     quoteHTML += `<p class= "source">-<span class = "sourcePerson">${randomQuote.source}</span>, `;
   } else {
-    quoteHTML += '<p class= "source">-<span class = "sourcePerson">Unknown Source</span>, ';
+    quoteHTML += '<p class= "source">-<span class = "sourcePerson">Source Uknown</span>, ';
   }
   // Citation check
   if ("citation" in randomQuote) {
     quoteHTML += `<span class = "citation">${randomQuote.citation}</span>, `;
   } else {
-    quoteHTML += '<span class = "citation">Unknown Citation</span>, ';
+    quoteHTML += '<span class = "citation">Citation Unknown</span>, ';
   }
   // Year check and close paragraph tag
   if ("year" in randomQuote) {
     quoteHTML += `<span class = "year">${randomQuote.year}</span></p>`;
   } else {
-    quoteHTML += '<span class = "year">Unknown Year</span></p>';
+    quoteHTML += '<span class = "year">Year Unknown</span></p>';
   }
 
   return (document.getElementById("quoteOutput").innerHTML = quoteHTML);

@@ -1,5 +1,5 @@
 :root {
-  --titleColor: #feda4a;
+  --accentColor: #feda4a;
   --fontColor: #fff;
   --drkBackground: #121212;
   --btnColorDark: #6b0f15;
@@ -31,10 +31,9 @@ header {
 }
 
 h1 {
-  color: var(--titleColor);
+  /* color: var(--accentColor); */
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
   font-size: 9vw;
-  font-family: "Days One", sans-serif;
   margin-top: 2rem;
 }
 
@@ -43,11 +42,16 @@ main {
 }
 
 footer {
-  color: var(--titleColor);
+  color: var(--accentColor);
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
   font-size: 1.3rem;
   margin: 0 auto;
   line-height: 0.1em;
+}
+
+.starWarsHead{
+  font-family: "Days One", sans-serif;
+  color: var(--accentColor);
 }
 
 .container {
@@ -56,8 +60,7 @@ footer {
 
 .quoteOutput {
   background: rgba(0, 0, 0, 0.3);
-  margin: 2rem auto;
-  padding-top: 1rem;
+  margin: 2rem auto 2.5rem;
 }
 
 #loadQuoteBtn {
@@ -70,7 +73,7 @@ footer {
   display: inline-block;
   font-size: 4vw;
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 1.3rem;
   animation: glowing 2500ms infinite;
 }
 
@@ -105,9 +108,10 @@ footer {
   width: 80%;
   font-size: 6.5vw;
   margin: 0 auto;
-  text-align: left;
+  /* text-align: left; */
+  text-align: center;
   line-height: 1.2;
-  text-indent: 1rem;
+  /* text-indent: 1rem; */
 }
 .source {
   font-weight: bold;
@@ -116,7 +120,7 @@ footer {
   margin: 1.5rem auto;
 }
 .sourcePerson {
-  color: var(--titleColor);
+  color: var(--accentColor);
 }
 .citation {
   font-style: italic;
@@ -134,21 +138,35 @@ footer {
     font-size: 3rem;
   }
   #loadQuoteBtn {
-    font-size: 1.8rem;
-    padding: 1.5rem 2rem;
-    /* margin: 5rem auto; */
+    font-size: 1.5rem;
+    /* padding: 1rem auto; */
+    margin: 2rem auto;
   }
 
   .container {
-    margin: 2% auto 3%;
+    margin: 2rem auto;
   }
-
   .quote {
     font-size: 2.5rem;
-    /* margin: 5rem auto; */
     text-align: center;
+
+    width: 90%;
   }
   .source {
     font-size: 2rem;
+    width: 100%;
   }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .quoteOutput{
+    
+    margin-top: 2rem;
+  }
+  
+  
+
+
+
 }
