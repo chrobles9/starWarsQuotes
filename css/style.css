@@ -52,7 +52,13 @@ footer {
 
 .container {
   margin: 1rem auto;
-} 
+}
+
+.quoteOutput {
+  background: rgba(0, 0, 0, 0.3);
+  margin: 2rem auto;
+  padding-top: 1rem;
+}
 
 #loadQuoteBtn {
   font-family: "Days One", sans-serif;
@@ -66,12 +72,6 @@ footer {
   margin: 1rem auto;
   padding: 1rem;
   animation: glowing 2500ms infinite;
-  
-}
-
-.quoteOutput {
-  background: rgba(0, 0, 0, 0.3);
-  margin: 2rem auto;
 }
 
 /* BUTTON INTERACTION STYLES */
@@ -103,10 +103,11 @@ footer {
 /* QUOTE TYPOGRAPHY STYLES */
 .quote {
   width: 80%;
-  font-size: 7vw;
+  font-size: 6.5vw;
   margin: 0 auto;
   text-align: left;
   line-height: 1.2;
+  text-indent: 1rem;
 }
 .source {
   font-weight: bold;
@@ -138,20 +139,16 @@ footer {
     /* margin: 5rem auto; */
   }
 
-  .container{
+  .container {
     margin: 2% auto 3%;
   }
 
-  .quote{
+  .quote {
     font-size: 2.5rem;
     /* margin: 5rem auto; */
     text-align: center;
-
   }
-  .source{
+  .source {
     font-size: 2rem;
   }
-
-  
-
 }
