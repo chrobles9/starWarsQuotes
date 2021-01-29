@@ -11,18 +11,17 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
   </head>
   <body>
     <header>
-      <h1 class="mainHeading"><span class = "starWarsHead">Star Wars</span> Quotes</h1>
-      <!-- TODO: Insert Star Wars pic or logo under heading title -->
+      <h1 class="mainHeading">
+        <span class="starWarsHead">Star Wars</span> Quotes
+      </h1>
     </header>
 
-    <!-- TODO: Restructor HTML so btn is outside of quote container  -->
     <main>
       <div class="container">
-        <!-- <button id="loadQuoteBtn" class="loadQuoteBtn">Display New Quote</button> -->
         <section id="quoteOutput" class="quoteOutput">
           <p class="quote">"Help me, Obi-Wan Kenobi. You’re my only hope."</p>
           <p class="source">
@@ -31,9 +30,7 @@
             <span class="year">1977</span>
           </p>
         </section>
-        <button id="loadQuoteBtn" class="loadQuoteBtn">
-          New Random Quote
-        </button>
+        <button id="loadQuoteBtn" class="loadQuoteBtn">New Random Quote</button>
       </div>
     </main>
 
