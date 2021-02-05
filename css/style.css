@@ -23,7 +23,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 95vh;
 }
 
 header {
@@ -31,7 +31,6 @@ header {
 }
 
 h1 {
-  /* color: var(--accentColor); */
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
   font-size: 9vw;
   margin-top: 2rem;
@@ -49,7 +48,7 @@ footer {
   line-height: 0.1em;
 }
 
-.starWarsHead{
+.starWarsHead {
   font-family: "Days One", sans-serif;
   color: var(--accentColor);
 }
@@ -108,10 +107,8 @@ footer {
   width: 80%;
   font-size: 6.5vw;
   margin: 0 auto;
-  /* text-align: left; */
   text-align: center;
   line-height: 1.2;
-  /* text-indent: 1rem; */
 }
 .source {
   font-weight: bold;
@@ -132,14 +129,12 @@ footer {
 /*************************
   STYLES FOR LARGER SCREENS
 **************************/
-/* TODO: FINISH STYLES FOR LARGER SCREENS */
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 3rem;
   }
   #loadQuoteBtn {
     font-size: 1.5rem;
-    /* padding: 1rem auto; */
     margin: 2rem auto;
   }
 
@@ -158,15 +153,8 @@ footer {
   }
 }
 
-
 @media only screen and (min-width: 1024px) {
-  .quoteOutput{
-    
+  .quoteOutput {
     margin-top: 2rem;
   }
-  
-  
-
-
-
 }
